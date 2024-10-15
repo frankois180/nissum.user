@@ -31,8 +31,8 @@ public class UserCreate {
     public User create(User user) {
         String email = user.getEmail();
         if(email != null) {
-            existEmail(email);
             emailNotValid(email);
+            existEmail(email);
         }
         buildUser(user);
         User userSave = createUserService.create(user);
@@ -61,7 +61,6 @@ public class UserCreate {
         user.setId(UUID.randomUUID());
         user.setActive(true);
         user.setCreationDate(now);
-        user.setModifiedDate(now);
         user.setLastLogin(now);
     }
 

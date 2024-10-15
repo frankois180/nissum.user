@@ -1,4 +1,4 @@
-package com.nissum.user.infrastructure.adapters;
+package com.nissum.user.infrastructure.adapter;
 
 import com.nissum.user.domain.port.incoming.create.CreateTokenService;
 import com.nissum.user.infrastructure.util.JwtUtil;

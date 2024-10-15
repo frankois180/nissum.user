@@ -1,4 +1,4 @@
-package com.nissum.user.infrastructure.request;
+package com.nissum.user.infrastructure.api.request;
 
 import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;

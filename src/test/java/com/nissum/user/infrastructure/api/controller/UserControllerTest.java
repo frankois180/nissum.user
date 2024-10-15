@@ -1,12 +1,12 @@
-package com.nissum.user.infrastructure.controller;
+package com.nissum.user.infrastructure.api.controller;
 
 import com.nissum.user.application.create.UserCreate;
 import com.nissum.user.domain.exception.RecordExistException;
 import com.nissum.user.domain.exception.UserApiNotificationCode;
 import com.nissum.user.domain.model.User;
-import com.nissum.user.infrastructure.request.PhoneRequest;
-import com.nissum.user.infrastructure.request.UserRequest;
-import com.nissum.user.infrastructure.respose.UserResponse;
+import com.nissum.user.infrastructure.api.request.PhoneRequest;
+import com.nissum.user.infrastructure.api.request.UserRequest;
+import com.nissum.user.infrastructure.api.respose.UserResponse;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;

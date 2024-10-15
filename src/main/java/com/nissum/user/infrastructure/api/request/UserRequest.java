@@ -1,4 +1,4 @@
-package com.nissum.user.infrastructure.request;
+package com.nissum.user.infrastructure.api.request;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

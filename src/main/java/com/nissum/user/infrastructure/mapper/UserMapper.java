@@ -2,8 +2,8 @@ package com.nissum.user.infrastructure.mapper;
 
 import com.nissum.user.domain.model.User;
 import com.nissum.user.infrastructure.repository.entity.UserEntity;
-import com.nissum.user.infrastructure.request.UserRequest;
-import com.nissum.user.infrastructure.respose.UserResponse;
+import com.nissum.user.infrastructure.api.request.UserRequest;
+import com.nissum.user.infrastructure.api.respose.UserResponse;
 import org.modelmapper.ModelMapper;
 
 public class UserMapper {

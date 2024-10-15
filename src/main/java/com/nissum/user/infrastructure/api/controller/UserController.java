@@ -1,13 +1,13 @@
-package com.nissum.user.infrastructure.controller;
+package com.nissum.user.infrastructure.api.controller;
 
 import com.nissum.user.application.create.UserCreate;
 
 import javax.validation.Valid;
 
-import com.nissum.user.infrastructure.constants.Constants;
+import com.nissum.user.infrastructure.constant.SwaggerConstant;
 import com.nissum.user.infrastructure.mapper.UserMapper;
-import com.nissum.user.infrastructure.request.UserRequest;
-import com.nissum.user.infrastructure.respose.UserResponse;
+import com.nissum.user.infrastructure.api.request.UserRequest;
+import com.nissum.user.infrastructure.api.respose.UserResponse;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -27,7 +27,7 @@ public class UserController {
     private final UserCreate userCreate;
 
     @PostMapping
-    @Operation(summary = Constants.SWAGGER_CREATE_SUMMARY, description = Constants.SWAGGER_CREATE_DESCRIPTION)
+    @Operation(summary = SwaggerConstant.SWAGGER_CREATE_SUMMARY, description = SwaggerConstant.SWAGGER_CREATE_DESCRIPTION)
     public UserResponse create(@Valid  @RequestBody UserRequest userRequest) {
         return UserMapper.mapToUser(userCreate.create(Objects.requireNonNull(UserMapper.mapToUser(userRequest))));
     }

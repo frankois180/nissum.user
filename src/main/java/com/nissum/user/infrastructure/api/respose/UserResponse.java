@@ -1,4 +1,4 @@
-package com.nissum.user.infrastructure.respose;
+package com.nissum.user.infrastructure.api.respose;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
